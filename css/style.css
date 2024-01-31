@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css?family=Kanit:700|Nunito%20Sans:400');
+
+:root{
+    /* Colours */
+    --text: #dffcd9;
+    --background: #050b04;
+    --background-1: #181e15;
+    --primary: #8df575;
+    --secondary: #2bce12;
+    --secondary-1: #017e08;
+    --accent: #12EFB0;
+
+    --headerFontFamily: 'Kanit';
+
+    --bodyFontFamily: 'Nunito Sans';
+}
+
+*{
+    background-color: var(--background);
+    color: var(--text);
+    margin: 0;
+    padding: 0;
+}
+
+body {
+  font-family: 'Nunito Sans';
+  font-weight: 400;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Kanit';
+  font-weight: 700;
+  background-color: inherit;
+}
+
+html {font-size: 100%;} /* 16px */
+h1 {font-size: 4.210rem; /* 67.36px */}
+h2 {font-size: 3.158rem; /* 50.56px */}
+h3 {font-size: 2.369rem; /* 37.92px */}
+h4 {font-size: 1.777rem; /* 28.48px */}
+h5 {font-size: 1.333rem; /* 21.28px */}
+small {font-size: 0.750rem; /* 12px */}
+
+.Header{
+    width: 100%;
+    border-bottom: 1px solid var(--primary);
+    background-color: var(--background-1);
+}
+
+.HeaderTop{
+    display: flex;
+    justify-content: space-between;
+    background-color: inherit;
+    border-bottom: 1px solid var(--primary);
+}
+
+.Title{
+    padding: 0.5rem;
+    text-align: center;
+    background: linear-gradient(135deg, var(--secondary), var(--secondary-1));
+    width: 15rem;
+}
+
+.Clock{
+    text-align: right;
+    padding-right: 1rem;
+    background-color: inherit;
+    text-shadow: 0.15rem 0.1rem var(--secondary-1);
+}
+
+.Navigation{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    background-color: var(--background-1);
+}
+
+.Navigation ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.Navigation li {
+    display: inline;
+    float: left;
+}
+
+.Navigation a{
+    text-decoration: none;
+    display: block;
+    padding: 1vh 6vw;
+    color: inherit;
+    background-color: var(--background-1);
+}
+
+.Navigation a:hover{
+    background-color: var(--primary);
+    color: var(--background);
+}
+
+.MainContent{
+    text-align: center;
+}
+
